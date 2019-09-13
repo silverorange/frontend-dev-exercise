@@ -14,8 +14,7 @@ fit with the existing visual page design:
 
 1. Change the multi-line *Street Address* field into line1 and line2 fields.
    Line2 field should be optional.
-2. Add a check-mark to the *Account Information* section to opt in to beta
-   features. Include the following descriptive text:
+2. Add a check-mark and the following text below the *Order Summary* section:
    > With our beta program, you get early access to new features, but they may
    > not always work perfectly. You can change your beta preference at any time
    > after you join.
