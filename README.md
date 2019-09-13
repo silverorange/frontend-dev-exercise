@@ -1,9 +1,6 @@
 silverorange Frontend Developer Exercise
 ==========================================
-This exercise is designed to assess how you approach tasks required in your
-position as a frontend developer at silverorange. We are interested to see how
-you work as well, as what your final results are; include useful Git commit
-messages and comments where you think your code may be unclear.
+This exercise is designed to assess how you approach tasks representative of the front-end developer role at silverorange. We are as interested in your process as we are in the final results. Please include descripting Git commit messages and comments where you think your code may be unclear.
 
 Express Backend
 ---------------
