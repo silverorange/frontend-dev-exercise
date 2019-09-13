@@ -1,0 +1,15 @@
+.header {
+  flex: none;
+  border-bottom: 1px solid #fff;
+}
+
+.header__container {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  align-items: center;
+}

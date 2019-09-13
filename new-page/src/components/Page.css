@@ -1,0 +1,11 @@
+.page {
+  flex: 1 0 auto;
+  padding: 10px 0 3em;
+}
+
+.page__container {
+  width: 100%;
+  max-width: 660px;
+  margin: 0 auto;
+  background: #fff;
+}
