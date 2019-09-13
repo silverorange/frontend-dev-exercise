@@ -61,9 +61,9 @@ A basic responsive template is included in the project to get you started.
 
 ### Runing and Testing
 
-Create-react-app bundles hot-reloading so starting the developemnt server will
-open your default browser and the page will automaticaly refresh as you edit
-and save components and CSS.
+Create-react-app comes with hot-reloading. Starting the development server
+with `yarn start` will open your default browser, and the page will
+automaticaly refresh as you edit and save components and CSS.
 
 ```sh
 cd new-page/
