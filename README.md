@@ -5,8 +5,8 @@ the front-end developer role at silverorange. We are as interested in your
 process as we are in the final results. Please include descriptive Git commit
 messages and comments where you think your code may be unclear.
 
-1. Express Backend
----------------
+1 - Update Existing Page
+------------------------
 With the provided Express framework, implement the `/repos` API endpoint. The
 endpoint should aggregate GitHub repository data from the following sources:
 
@@ -27,8 +27,9 @@ cd api/
 yarn install
 yarn start
 ```
-2. Build Out New Page
-------------------
+
+2 - Build Out New Page
+----------------------
 Using the provided `create-react-app` base in the `/new-page` folder, implement
 the page from this mockup:
 https://www.figma.com/file/pirNL6mXMswfRkJQAZsDSK/devtest
