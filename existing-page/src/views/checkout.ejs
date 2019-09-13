@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <% include ./partials/head %>
+  </head>
+  <body>
+    <header>
+      <% include ./partials/header %>
+    </header>
+    <main>
+      <div class="container">
+        <form id="form" method="post" accept-charset="utf-8" action="checkout" class="swat-form swat-displayable-container" novalidate="novalidate">
+          <div id="checkout_first_frame" class="swat-displayable-container container-960 clear checkout-first-frame">
+            <div class="swat-displayable-container grid_5 grid_right checkout-sidebar">
+              <div id="sidebar" class="swat-displayable-container">
+                <div id="summary_view_container" class="swat-displayable-container">
+                  <div class="swat-frame swat-displayable-container dark-frame">
+                    <h2 class="swat-frame-title">Order Summary</h2>
+                    <div class="swat-frame-contents">
+                      <table id="order_view" class="swat-table-view order-view" cellspacing="0">
+                        <tbody>
+                          <tr class="odd first last">
+                            <td class="description swat-text-cell-renderer">Hippo EM Resident Package<span class="item-description">EM Resident Package</span></td>
+                            <td class="space swat-text-cell-renderer"> </td>
+                            <td class="total swat-money-cell-renderer">$249.00</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr id="summary" class="swat-table-view-widget-row">
+                              <td colspan="3" class="widget-cell">
+                                <div id="summary_note" class="swat-displayable-container">
+                                  <p>Subscription Includes:</p><p>Hippo EM Resident Package</p>
+                                  <ul>
+                                    <li>12 months of access for 1 user, ending on September 13, 2020</li>
+                                    <li>Video content review</li>
+                                    <li>Written summaries and slides</li>
+                                    <li>1200+ ABEM-style questions</li>
+                                  </ul>
+                                </div>
+                              </td>
+                            </tr>
+                          </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="ordering-information-links">
+                  <div class="info info-contact">
+                    <h5>Need Help?</h5>
+                    <p>Call us now at <span class="tel" title="+18559944776">1‑855‑994‑4776</span> or <a href="contact">contact us</a>.</p>
+                    <p class="in-office-note">We’re in the office Monday to Friday from <span class="time">9 AM</span> to <span class="time">4 PM PST</span>.</p>
+                  </div>
+                </div>
+              </div>
+              <div id="promotion_container" class="swat-frame swat-displayable-container grid_5 checkout-frame promo-sidebar">
+                <h5 class="swat-frame-title">Promo Code</h5>
+                <div class="swat-frame-contents">
+                  <div id="promotion_field" class="swat-form-field swat-displayable-container">
+                    <div class="swat-form-field-contents">
+                      <input type="text" name="promotion" id="promotion" class="swat-entry" value="" size="20" maxlength="20" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="basic_info_container" class="swat-frame swat-displayable-container grid_7 checkout-frame">
+              <h2 class="swat-frame-title">Account Details</h2>
+              <div class="swat-frame-contents">
+                <div id="first_name_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="first_name">First Name: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="text" name="first_name" id="first_name" class="swat-entry" value="Michael" size="17" maxlength="255" />
+                  </div>
+                </div>
+                <div id="last_name_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="last_name">Last Name: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="text" name="last_name" id="last_name" class="swat-entry" value="Gauthier" size="17" maxlength="255" />
+                  </div>
+                </div>
+                <div id="suffix_field" class="swat-form-field swat-displayable-container">
+                  <label for="ned834121551b07532889e0da61f59bec">Suffix: </label>
+                  <div class="swat-form-field-contents">
+                    <input type="text" name="ned834121551b07532889e0da61f59bec" id="ned834121551b07532889e0da61f59bec" class="swat-entry" value="" size="5" maxlength="255" />
+                    <input type="hidden" name="suffix_nonce" value="ned834121551b07532889e0da61f59bec" />
+                  </div>
+                </div>
+                <div id="email_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="email">Email: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="email" name="email" id="email" class="swat-email-entry swat-entry" value="mike+pcrapfree@silverorange.com" size="50" maxlength="255" />
+                  </div>
+                </div>
+                <div id="confirm_email_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="confirm_email">Re-type Email: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="email" name="confirm_email" id="confirm_email" class="swat-confirm-email-entry swat-email-entry swat-entry" value="mike+pcrapfree@silverorange.com" size="50" maxlength="255" />
+                  </div>
+                  <div class="swat-note">Your email address is used to sign into your account. We value your privacy and will not sell or share your email address.</div>
+                </div>
+              </div>
+            </div>
+            <div id="resident_container" class="swat-frame swat-displayable-container grid_7 checkout-frame">
+              <h2 class="swat-frame-title">Proof of Residency</h2>
+              <div class="swat-frame-contents">
+                <div class="resident-proof-note">
+                  <p>
+                    To verify your residency status we will check the website you provide, and possibly contact your residency director.
+                  </p>
+                  <p>
+                    Verification can take up to 2 days. Until we verify your status, your account will be limited; not all features will be available.
+                  </p>
+                </div>
+                <div id="residency_program_name_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="residency_program_name">Residency Program: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="text" name="residency_program_name" id="residency_program_name" class="swat-entry" value="" size="35" maxlength="255" />
+                  </div>
+                </div>
+                <div id="residency_director_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="residency_director">Residency Director: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="text" name="residency_director" id="residency_director" class="swat-entry" value="" size="35" maxlength="255" />
+                  </div>
+                </div>
+                <div id="residency_phone_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label for="residency_phone">Residency Office Phone Number: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <input type="tel" name="residency_phone" id="residency_phone" class="swat-phone-entry swat-entry" value="" size="35" maxlength="255" />
+                  </div>
+                  <div class="swat-note">Please include country and area code.</div>
+                </div>
+                <div id="residency_website_field" class="swat-form-field swat-displayable-container">
+                  <label for="residency_website">Residency Website Directory:</label>
+                  <div class="swat-form-field-contents">
+                    <input type="text" name="residency_website" id="residency_website" class="swat-uri-entry swat-entry" value="" size="35" maxlength="255" />
+                  </div>
+                  <div class="swat-note">A link to the resident directory on your residency website.</div>
+                </div>
+                <div id="graduation_date_field" class="swat-form-field swat-required swat-displayable-container">
+                  <label>Graduation: <span class="swat-required"> (required)</span></label>
+                  <div class="swat-form-field-contents">
+                    <div id="graduation_date" class="swat-date-entry">
+                      <span class="swat-date-entry-span">
+                        <span class="swat-date-entry-month swat-flydown-wrapper">
+                          <select name="graduation_date_month" id="graduation_date_month" class="swat-flydown swat-date-entry-month">
+                            <option value="ddSjjxoNKPJEd4BR95omkQ|N;" class="swat-blank-option" selected="selected">Month</option>
+                            <option value="SNF3tWjeOPWWmIjvIctY*g|i:1;">January</option>
+                            <option value="c3l1U6MSJfASnk0SuirxAw|i:2;">February</option>
+                            <option value="kR7xjxM3fW3I*cXUhUhdig|i:3;">March</option>
+                            <option value="Urn8ciYtYmWiinaVqhZvcg|i:4;">April</option>
+                            <option value="bjkZV331a9GyTxMGEIOlBg|i:5;">May</option>
+                            <option value="GVDRGNkVQK*2Eid4*DqTaw|i:6;">June</option>
+                            <option value="V4Tb5uJGAWKO2IP3eKWiCA|i:7;">July</option>
+                            <option value="PntabY0JUCHBxqX5NpBSfA|i:8;">August</option>
+                            <option value="LBYP0EShiNnv5w078r-kQQ|i:9;">September</option>
+                            <option value="t0oYTeFK6sbI9zJYi2D7dA|i:10;">October</option>
+                            <option value="hYJfMuLs0uajQr*jW7nIWg|i:11;">November</option>
+                            <option value="6UtcIOv1rWD2o3nW5BOfjQ|i:12;">December</option>
+                          </select>
+                        </span>
+                        <span class="swat-date-entry-year swat-flydown-wrapper">
+                          <select name="graduation_date_year" id="graduation_date_year" class="swat-flydown swat-date-entry-year">
+                            <option value="ddSjjxoNKPJEd4BR95omkQ|N;" class="swat-blank-option" selected="selected">Year</option>
+                            <option value="xLYo9sZ1DY3MzQw0JupHTQ|i:2019;">2019</option>
+                            <option value="svOY6FyRAbqEvooKRW3W7A|i:2020;">2020</option>
+                            <option value="iIud608oPgt9WC*DNRtyhg|i:2021;">2021</option>
+                            <option value="GAnUulhPMtKierz7RYxrBw|i:2022;">2022</option>
+                            <option value="cTcuAZVhbd1tA*9vdV2IMQ|i:2023;">2023</option>
+                            <option value="ECUPsXOyvuLMzk2PVQttGA|i:2024;">2024</option>
+                            <option value="880Wgdb5NJkhhz7tiznYHQ|i:2025;">2025</option>
+                          </select>
+                        </span>
+                     </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="billing_address_container" class="swat-frame swat-displayable-container grid_7 checkout-frame">
+              <h2 class="swat-frame-title">Billing Address</h2>
+              <div class="swat-frame-contents">
+                <div id="billing_address_form" class="swat-displayable-container">
+                  <div id="billing_address_name_container" class="swat-displayable-container name-fields-container">
+                    <div id="billing_address_first_name_field" class="swat-form-field swat-required swat-displayable-container first-name-field">
+                      <label for="billing_address_first_name">First Name: <span class="swat-required"> (required)</span></label>
+                      <div class="swat-form-field-contents">
+                        <input type="text" name="billing_address_first_name" id="billing_address_first_name" class="swat-entry" value="Michael" size="17" maxlength="255" />
+                      </div>
+                    </div>
+                    <div id="billing_address_last_name_field" class="swat-form-field swat-required swat-displayable-container last-name-field">
+                      <label for="billing_address_last_name">Last Name: <span class="swat-required"> (required)</span></label>
+                      <div class="swat-form-field-contents">
+                        <input type="text" name="billing_address_last_name" id="billing_address_last_name" class="swat-entry" value="Gauthier" size="17" maxlength="255" />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="billing_address_country_field" class="swat-form-field swat-required swat-displayable-container">
+                    <label for="billing_address_country">Location: <span class="swat-required"> (required)</span></label>
+                    <div class="swat-form-field-contents">
+                      <span class="swat-flydown-wrapper">
+                        <select name="billing_address_country" id="billing_address_country" class="swat-flydown">
+                          <option value="AF">Afghanistan</option>
+                          <option value="AL">Albania</option>
+                          <option value="DZ">Algeria</option>
+                          <option value="AD">Andorra</option>
+                          <option value="AO">Angola</option>
+                          <option value="AI">Anguilla</option>
+                          <option value="AQ">Antarctica</option>
+                          <option value="AG">Antigua &amp; Barbuda</option>
+                          <option value="AR">Argentina</option>
+                          <option value="AM">Armenia</option>
+                          <option value="AW">Aruba</option>
+                          <option value="AU">Australia</option>
+                          <option value="AT">Austria</option>
+                          <option value="AZ">Azerbaijan</option>
+                          <option value="BS">Bahamas</option>
+                          <option value="BH">Bahrain</option>
+                          <option value="BD">Bangladesh</option>
+                          <option value="BB">Barbados</option>
+                          <option value="BY">Belarus</option>
+                          <option value="BE">Belgium</option>
+                          <option value="BZ">Belize</option>
+                          <option value="BJ">Benin</option>
+                          <option value="BM">Bermuda</option>
+                          <option value="BT">Bhutan</option>
+                          <option value="BO">Bolivia</option>
+                          <option value="BA">Bosnia &amp; Herzegovina</option>
+                          <option value="BW">Botswana</option>
+                          <option value="BV">Bouvet Island</option>
+                          <option value="BR">Brazil</option>
+                          <option value="BN">Brunei Darussalam</option>
+                          <option value="BG">Bulgaria</option>
+                          <option value="BF">Burkina Faso</option>
+                          <option value="BI">Burundi</option>
+                          <option value="KH">Cambodia</option>
+                          <option value="CM">Cameroon</option>
+                          <option value="CA">Canada</option>
+                          <option value="CV">Cape Verde</option>
+                          <option value="KY">Cayman Islands</option>
+                          <option value="CF">Central African Republic</option>
+                          <option value="TD">Chad</option>
+                          <option value="CL">Chile</option>
+                          <option value="CN">China</option>
+                          <option value="CX">Christmas Island</option>
+                          <option value="CI">Côte D'Ivoire</option>
+                          <option value="CC">Cocos (Keeling) Islands</option>
+                          <option value="CO">Colombia</option>
+                          <option value="KM">Comoros</option>
+                          <option value="CD">Congo</option>
+                          <option value="CG">Congo</option>
+                          <option value="CK">Cook Islands</option>
+                          <option value="CR">Costa Rica</option>
+                          <option value="HR">Croatia</option>
+                          <option value="CU">Cuba</option>
+                          <option value="CY">Cyprus</option>
+                          <option value="CZ">Czech Republic</option>
+                          <option value="DK">Denmark</option>
+                          <option value="DJ">Djibouti</option>
+                          <option value="DM">Dominica</option>
+                          <option value="DO">Dominican Republic</option>
+                          <option value="TP">East Timor</option>
+                          <option value="EC">Ecuador</option>
+                          <option value="EG">Egypt</option>
+                          <option value="SV">El Salvador</option>
+                          <option value="GQ">Equatorial Guinea</option>
+                          <option value="ER">Eritrea</option>
+                          <option value="EE">Estonia</option>
+                          <option value="ET">Ethiopia</option>
+                          <option value="FK">Falkland Islands</option>
+                          <option value="FO">Faroe Islands</option>
+                          <option value="FJ">Fiji</option>
+                          <option value="FI">Finland</option>
+                          <option value="FR">France</option>
+                          <option value="GF">French Guiana</option>
+                          <option value="PF">French Polynesia</option>
+                          <option value="GA">Gabon</option>
+                          <option value="GM">Gambia</option>
+                          <option value="GE">Georgia</option>
+                          <option value="DE">Germany</option>
+                          <option value="GH">Ghana</option>
+                          <option value="GI">Gibraltar</option>
+                          <option value="GR">Greece</option>
+                          <option value="GL">Greenland</option>
+                          <option value="GD">Grenada</option>
+                          <option value="GP">Guadeloupe</option>
+                          <option value="GT">Guatemala</option>
+                          <option value="GN">Guinea</option>
+                          <option value="GW">Guinea-Bissau</option>
+                          <option value="GY">Guyana</option>
+                          <option value="HT">Haiti</option>
+                          <option value="HN">Honduras</option>
+                          <option value="HK">Hong Kong</option>
+                          <option value="HU">Hungary</option>
+                          <option value="IS">Iceland</option>
+                          <option value="IN">India</option>
+                          <option value="ID">Indonesia</option>
+                          <option value="IR">Iran</option>
+                          <option value="IQ">Iraq</option>
+                          <option value="IE">Ireland</option>
+                          <option value="IL">Israel</option>
+                          <option value="IT">Italy</option>
+                          <option value="JM">Jamaica</option>
+                          <option value="JP">Japan</option>
+                          <option value="JO">Jordan</option>
+                          <option value="KZ">Kazakstan</option>
+                          <option value="KE">Kenya</option>
+                          <option value="KI">Kiribati</option>
+                          <option value="KR">Korea</option>
+                          <option value="KW">Kuwait</option>
+                          <option value="KG">Kyrgyzstan</option>
+                          <option value="LA">Lao</option>
+                          <option value="LV">Latvia</option>
+                          <option value="LB">Lebanon</option>
+                          <option value="LS">Lesotho</option>
+                          <option value="LR">Liberia</option>
+                          <option value="LY">Libyan Arab Jamahiriya</option>
+                          <option value="LI">Liechtenstein</option>
+                          <option value="LT">Lithuania</option>
+                          <option value="LU">Luxembourg</option>
+                          <option value="MO">Macau</option>
+                          <option value="MK">Macedonia</option>
+                          <option value="MG">Madagascar</option>
+                          <option value="MW">Malawi</option>
+                          <option value="MY">Malaysia</option>
+                          <option value="MV">Maldives</option>
+                          <option value="ML">Mali</option>
+                          <option value="MT">Malta</option>
+                          <option value="MQ">Martinique</option>
+                          <option value="MR">Mauritania</option>
+                          <option value="MU">Mauritius</option>
+                          <option value="YT">Mayotte</option>
+                          <option value="MX">Mexico</option>
+                          <option value="MD">Moldova</option>
+                          <option value="MC">Monaco</option>
+                          <option value="MN">Mongolia</option>
+                          <option value="ME">Montenegro</option>
+                          <option value="MS">Montserrat</option>
+                          <option value="MA">Morocco</option>
+                          <option value="MZ">Mozambique</option>
+                          <option value="MM">Myanmar</option>
+                          <option value="NA">Namibia</option>
+                          <option value="NR">Nauru</option>
+                          <option value="NP">Nepal</option>
+                          <option value="NL">Netherlands</option>
+                          <option value="AN">Netherlands Antilles</option>
+                          <option value="NC">New Caledonia</option>
+                          <option value="NZ">New Zealand</option>
+                          <option value="NI">Nicaragua</option>
+                          <option value="NE">Niger</option>
+                          <option value="NG">Nigeria</option>
+                          <option value="NU">Niue</option>
+                          <option value="NF">Norfolk Island</option>
+                          <option value="NO">Norway</option>
+                          <option value="OM">Oman</option>
+                          <option value="PK">Pakistan</option>
+                          <option value="PS">Palestinian Territory</option>
+                          <option value="PA">Panama</option>
+                          <option value="PG">Papua New Guinea</option>
+                          <option value="PY">Paraguay</option>
+                          <option value="PE">Peru</option>
+                          <option value="PH">Philippines</option>
+                          <option value="PN">Pitcairn</option>
+                          <option value="PL">Poland</option>
+                          <option value="PT">Portugal</option>
+                          <option value="QA">Qatar</option>
+                          <option value="RE">Réunion</option>
+                          <option value="RO">Romania</option>
+                          <option value="RU">Russian Federation</option>
+                          <option value="RW">Rwanda</option>
+                          <option value="WS">Samoa</option>
+                          <option value="SM">San Marino</option>
+                          <option value="ST">Sao Tome &amp; Principe</option>
+                          <option value="SA">Saudi Arabia</option>
+                          <option value="SN">Senegal</option>
+                          <option value="RS">Serbia</option>
+                          <option value="SC">Seychelles</option>
+                          <option value="SL">Sierra Leone</option>
+                          <option value="SG">Singapore</option>
+                          <option value="SK">Slovakia</option>
+                          <option value="SI">Slovenia</option>
+                          <option value="SB">Solomon Islands</option>
+                          <option value="SO">Somalia</option>
+                          <option value="ZA">South Africa</option>
+                          <option value="GS">South Georgia</option>
+                          <option value="SS">South Sudan</option>
+                          <option value="ES">Spain</option>
+                          <option value="LK">Sri Lanka</option>
+                          <option value="SH">St. Helena</option>
+                          <option value="KN">St. Kitts and Nevis</option>
+                          <option value="LC">St. Lucia</option>
+                          <option value="PM">St. Pierre &amp; Miquelon</option>
+                          <option value="VC">St. Vincent/Grenadines</option>
+                          <option value="SD">Sudan</option>
+                          <option value="SR">Suriname</option>
+                          <option value="SJ">Svalbard &amp; Jan Mayen</option>
+                          <option value="SZ">Swaziland</option>
+                          <option value="SE">Sweden</option>
+                          <option value="CH">Switzerland</option>
+                          <option value="SY">Syrian Arab Republic</option>
+                          <option value="TW">Taiwan</option>
+                          <option value="TJ">Tajikistan</option>
+                          <option value="TZ">Tanzania</option>
+                          <option value="TH">Thailand</option>
+                          <option value="TG">Togo</option>
+                          <option value="TK">Tokelau</option>
+                          <option value="TO">Tonga</option>
+                          <option value="TT">Trinidad &amp; Tobago</option>
+                          <option value="TN">Tunisia</option>
+                          <option value="TR">Turkey</option>
+                          <option value="TM">Turkmenistan</option>
+                          <option value="TC">Turks &amp; Caicos Islands</option>
+                          <option value="TV">Tuvalu</option>
+                          <option value="UG">Uganda</option>
+                          <option value="UA">Ukraine</option>
+                          <option value="AE">United Arab Emirates</option>
+                          <option value="GB">United Kingdom</option>
+                          <option value="US" selected="selected">United States</option>
+                          <option value="UY">Uruguay</option>
+                          <option value="UZ">Uzbekistan</option>
+                          <option value="VU">Vanuatu</option>
+                          <option value="VA">Vatican</option>
+                          <option value="VE">Viet Nam</option>
+                          <option value="VN">Virgin Islands, British</option>
+                          <option value="WF">Western Sahara</option>
+                          <option value="EH">Yemen</option>
+                          <option value="YU">Zambia</option>
+                        </select>
+                      </span>
+                    </div>
+                  </div>
+                  <div id="billing_address_line1_field" class="swat-form-field swat-required swat-displayable-container">
+                    <label for="billing_address_line1">Street Address: <span class="swat-required"> (required)</span></label>
+                    <div class="swat-form-field-contents">
+                      <div class="swat-textarea-container">
+                        <textarea name="billing_address_line1" id="billing_address_line1" class="swat-textarea" rows="2" cols="35"></textarea>
+                      </div>
+                    </div>
+                  </div>
+                  <div id="billing_address_city_field" class="swat-form-field swat-required swat-displayable-container">
+                    <label for="billing_address_city">City: <span class="swat-required"> (required)</span></label>
+                    <div class="swat-form-field-contents">
+                      <input type="text" name="billing_address_city" id="billing_address_city" class="swat-entry" value="" size="35" maxlength="255" />
+                    </div>
+                  </div>
+                  <div id="billing_address_provstate_field" class="swat-form-field swat-required swat-displayable-container">
+                    <label for="billing_address_provstate_flydown">State/Province: <span class="swat-required"> (required)</span></label>
+                    <div class="swat-form-field-contents">
+                      <div id="billing_address_provstate" class="store-provstate-entry">
+                        <span class="swat-flydown-wrapper">
+                          <select name="billing_address_provstate_flydown" id="billing_address_provstate_flydown" class="swat-flydown">
+                            <option value="" class="swat-blank-option" selected="selected"></option>
+                            <option value="154">AA</option>
+                            <option value="156">AE</option>
+                            <option value="159">AP</option>
+                            <option value="158">Alabama</option>
+                            <option value="157">Alaska</option>
+                            <option value="155">Alberta</option>
+                            <option value="219">American Samoa</option>
+                            <option value="161">Arizona</option>
+                            <option value="160">Arkansas</option>
+                            <option value="228">Australian Capital Territory</option>
+                            <option value="162">British Columbia</option>
+                            <option value="163">California</option>
+                            <option value="229">Christmas Island</option>
+                            <option value="230">Cocos Islands</option>
+                            <option value="164">Colorado</option>
+                            <option value="165">Connecticut</option>
+                            <option value="166">Delaware</option>
+                            <option value="226">District of Columbia</option>
+                            <option value="220">Federated States of Micronesia</option>
+                            <option value="167">Florida</option>
+                            <option value="168">Georgia</option>
+                            <option value="221">Guam</option>
+                            <option value="169">Hawaii</option>
+                            <option value="171">Idaho</option>
+                            <option value="172">Illinois</option>
+                            <option value="173">Indiana</option>
+                            <option value="170">Iowa</option>
+                            <option value="231">Jervis Bay</option>
+                            <option value="174">Kansas</option>
+                            <option value="175">Kentucky</option>
+                            <option value="176">Louisiana</option>
+                            <option value="180">Maine</option>
+                            <option value="178">Manitoba</option>
+                            <option value="222">Marshall Islands</option>
+                            <option value="179">Maryland</option>
+                            <option value="177">Massachusetts</option>
+                            <option value="181">Michigan</option>
+                            <option value="182">Minnesota</option>
+                            <option value="184">Mississippi</option>
+                            <option value="183">Missouri</option>
+                            <option value="185">Montana</option>
+                            <option value="195">N.W.T. &amp; Nunavut</option>
+                            <option value="189">Nebraska</option>
+                            <option value="196">Nevada</option>
+                            <option value="186">New Brunswick</option>
+                            <option value="190">New Hampshire</option>
+                            <option value="191">New Jersey</option>
+                            <option value="193">New Mexico</option>
+                            <option value="232">New South Wales</option>
+                            <option value="227">New York</option>
+                            <option value="192">Newfoundland and Labrador</option>
+                            <option value="187">North Carolina</option>
+                            <option value="188">North Dakota</option>
+                            <option value="218">Northern Mariana Islands</option>
+                            <option value="233">Northern Territory</option>
+                            <option value="194">Nova Scotia</option>
+                            <option value="197">Ohio</option>
+                            <option value="198">Oklahoma</option>
+                            <option value="199">Ontario</option>
+                            <option value="200">Oregon</option>
+                            <option value="223">Palau</option>
+                            <option value="201">Pennsylvania</option>
+                            <option value="202">Prince Edward Island</option>
+                            <option value="217">Puerto Rico</option>
+                            <option value="203">Quebec</option>
+                            <option value="234">Queensland</option>
+                            <option value="204">Rhode Island</option>
+                            <option value="207">Saskatchewan</option>
+                            <option value="235">South Australia</option>
+                            <option value="205">South Carolina</option>
+                            <option value="206">South Dakota</option>
+                            <option value="236">Tasmania</option>
+                            <option value="208">Tennessee</option>
+                            <option value="225">Texas</option>
+                            <option value="209">Utah</option>
+                            <option value="211">Vermont</option>
+                            <option value="237">Victoria</option>
+                            <option value="224">Virgin Islands</option>
+                            <option value="210">Virginia</option>
+                            <option value="212">Washington</option>
+                            <option value="214">West Virginia</option>
+                            <option value="238">Western Australia</option>
+                            <option value="213">Wisconsin</option>
+                            <option value="215">Wyoming</option>
+                            <option value="216">Yukon</option>
+                          </select>
+                        </span>
+                        <input type="text" name="billing_address_provstate_entry" id="billing_address_provstate_entry" class="swat-entry" value="" size="50" />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="billing_address_postalcode_field" class="swat-form-field swat-required swat-displayable-container">
+                    <label for="billing_address_postalcode">ZIP/Postal Code: <span class="swat-required"> (required)</span></label>
+                    <div class="swat-form-field-contents">
+                      <input type="text" name="billing_address_postalcode" id="billing_address_postalcode" class="swat-entry store-postal-code-entry" value="" size="10" maxlength="50" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="payment_method_container" class="swat-frame swat-displayable-container grid_7 checkout-frame">
+              <h2 class="swat-frame-title">Payment Method</h2>
+              <div class="swat-frame-contents">
+                <div id="payment_method_form" class="swat-displayable-container store-payment-method-single">
+                  <div id="payment_option_field" class="swat-form-field swat-required swat-displayable-container">
+                    <div class="swat-form-field-contents">
+                      <div id="payment_note">
+                        <strong>Our servers are secure.</strong> Your data is protected with industry standard encryption. See our <a href="privacy">security &amp; privacy policy</a>.
+                      </div>
+                      <div id="payment_option" class="swat-radio-note-book">
+                        <div class="swat-radio-note-book-page">
+                          <div id="type_1" class="swat-note-book-page">
+                            <div id="card_fields_container" class="swat-displayable-container">
+                              <div id="card_number_field" class="swat-form-field swat-required swat-displayable-container card-number-field">
+                                <label for="card_number">Card Number: <span class="swat-required"> (required)</span></label>
+                                <div class="card-number-content">
+                                  <div class="swat-form-field-contents">
+                                    <input type="text" name="card_number" id="card_number" class="swat-entry" value="" size="17" maxlength="50" autocomplete="off" />
+                                  </div>
+                                  <div class="swat-note">
+                                    <img alt="We accept American Express, Discover, MasterCard, and Visa." height="28" width="191" src="images/elements/card-logos.png" class="card-logos" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="card_expiry_field" class="swat-form-field swat-required swat-displayable-container">
+                                <label>Expiration Date: <span class="swat-required"> (required)</span></label>
+                                <div class="swat-form-field-contents">
+                                  <div id="card_expiry" class="swat-date-entry">
+                                    <span class="swat-date-entry-span">
+                                      <span class="swat-date-entry-month swat-flydown-wrapper">
+                                        <select name="card_expiry_month" id="card_expiry_month" class="swat-flydown swat-date-entry-month">
+                                          <option value="ddSjjxoNKPJEd4BR95omkQ|N;" class="swat-blank-option" selected="selected">Month</option>
+                                          <option value="SNF3tWjeOPWWmIjvIctY*g|i:1;">01 - January</option>
+                                          <option value="c3l1U6MSJfASnk0SuirxAw|i:2;">02 - February</option>
+                                          <option value="kR7xjxM3fW3I*cXUhUhdig|i:3;">03 - March</option>
+                                          <option value="Urn8ciYtYmWiinaVqhZvcg|i:4;">04 - April</option>
+                                          <option value="bjkZV331a9GyTxMGEIOlBg|i:5;">05 - May</option>
+                                          <option value="GVDRGNkVQK*2Eid4*DqTaw|i:6;">06 - June</option>
+                                          <option value="V4Tb5uJGAWKO2IP3eKWiCA|i:7;">07 - July</option>
+                                          <option value="PntabY0JUCHBxqX5NpBSfA|i:8;">08 - August</option>
+                                          <option value="LBYP0EShiNnv5w078r-kQQ|i:9;">09 - September</option>
+                                          <option value="t0oYTeFK6sbI9zJYi2D7dA|i:10;">10 - October</option>
+                                          <option value="hYJfMuLs0uajQr*jW7nIWg|i:11;">11 - November</option>
+                                          <option value="6UtcIOv1rWD2o3nW5BOfjQ|i:12;">12 - December</option>
+                                        </select>
+                                      </span>
+                                      <span class="swat-date-entry-year swat-flydown-wrapper">
+                                        <select name="card_expiry_year" id="card_expiry_year" class="swat-flydown swat-date-entry-year">
+                                          <option value="ddSjjxoNKPJEd4BR95omkQ|N;" class="swat-blank-option" selected="selected">Year</option>
+                                          <option value="xLYo9sZ1DY3MzQw0JupHTQ|i:2019;">2019</option>
+                                          <option value="svOY6FyRAbqEvooKRW3W7A|i:2020;">2020</option>
+                                          <option value="iIud608oPgt9WC*DNRtyhg|i:2021;">2021</option>
+                                          <option value="GAnUulhPMtKierz7RYxrBw|i:2022;">2022</option>
+                                          <option value="cTcuAZVhbd1tA*9vdV2IMQ|i:2023;">2023</option>
+                                          <option value="ECUPsXOyvuLMzk2PVQttGA|i:2024;">2024</option>
+                                          <option value="880Wgdb5NJkhhz7tiznYHQ|i:2025;">2025</option>
+                                          <option value="Rr6UtaZFeO4wT66MzUI*Fg|i:2026;">2026</option>
+                                          <option value="kfgdBEIeIjO4lfQmtPYBVg|i:2027;">2027</option>
+                                          <option value="kBVZw*G9F2KKoJTQ325dAg|i:2028;">2028</option>
+                                          <option value="Sr41g8XSG0xb560riccL*g|i:2029;">2029</option>
+                                          <option value="urBF2i6ss2ij8XSWjX8g8Q|i:2030;">2030</option>
+                                          <option value="2DNc6GnVwKR6Nzxh9OzvLQ|i:2031;">2031</option>
+                                          <option value="wFovRLVE7mLky-GANpMSSQ|i:2032;">2032</option>
+                                          <option value="HvmnetEifrN-kl11mmiPdg|i:2033;">2033</option>
+                                          <option value="BU*Y6nx*1nakajSrx0SPTA|i:2034;">2034</option>
+                                          <option value="Esdrus1ogLf6r7ag7ozdvQ|i:2035;">2035</option>
+                                          <option value="biORXDMAmapMF89VuuC7nQ|i:2036;">2036</option>
+                                          <option value="WZRn-ayBsMH83hEJTUsDCQ|i:2037;">2037</option>
+                                          <option value="KRxvl2KI26rp8FXmg0d13g|i:2038;">2038</option>
+                                          <option value="r9-UV5KKMIRVjpdHqAJEFQ|i:2039;">2039</option>
+                                        </select>
+                                      </span>
+                                    </span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div id="card_verification_value_field" class="swat-form-field swat-required swat-displayable-container card-verification-value-field">
+                                <div class="card-verification-value-label">
+                                  <label for="card_verification_value">Card Security Code: <span class="swat-required"> (required)</span></label>
+                                </div>
+                                <div class="swat-form-field-contents">
+                                  <input type="text" name="card_verification_value" id="card_verification_value" class="swat-entry" value="" size="4" maxlength="4" autocomplete="off" />
+                                </div>
+                                <div class="swat-note">For Visa, MasterCard and Discover, the three digits printed on the reverse of your card. For AmEx, the four digits printed above your card number on the front of your card.</div>
+                              </div>
+                              <div id="card_fullname_field" class="swat-form-field swat-required swat-displayable-container">
+                                <label for="card_fullname">Name on Card: <span class="swat-required"> (required)</span></label>
+                                <div class="swat-form-field-contents">
+                                  <input type="text" name="card_fullname" id="card_fullname" class="swat-entry" value="Michael Gauthier" size="35" maxlength="255" />
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <input type="hidden" name="payment_option" id="payment_option_type_1" value="payment_option_type_1" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="comments_container" class="swat-frame swat-displayable-container grid_7 checkout-frame">
+              <h2 class="swat-frame-title">Your Comments and Feedback</h2>
+              <div class="swat-frame-contents">
+                <div id="comments_field" class="swat-form-field swat-displayable-container">
+                  <div class="swat-form-field-contents">
+                    <div class="swat-textarea-container">
+                      <textarea name="comments" id="comments" class="swat-textarea" rows="4" cols="20"></textarea>
+                    </div>
+                  </div>
+                  <div class="swat-note">We love to hear from you! Use this space to add extra information about your order, make comments about our site or leave feedback.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swat-displayable-container grid_12">
+              <div id="checkout_footer" class="swat-footer-form-field swat-form-field swat-displayable-container">
+                <div class="swat-form-field-contents">
+                  <input type="submit" name="submit" id="submit" value="Next Step" class="swat-button swat-primary swat-button-submit" />
+                  <div id="footer_note" class="swat-displayable-container">
+                    You will have a chance to confirm your order on the next step.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swat-hidden">
+            <input type="hidden" name="_swat_form_character_encoding" value="&auml;&trade;&reg;" />
+            <input type="hidden" name="_swat_form_process" value="form" />
+            <input type="hidden" name="_swat_form_serialized__swat_form_process" value="nkWNo3sLzzMLtE7uTPydIA|s:4:&quot;form&quot;;" />
+            <input type="hidden" name="payment_option_submitted" value="1" />
+            <input type="hidden" name="_swat_form_serialized_payment_option_submitted" value="SNF3tWjeOPWWmIjvIctY*g|i:1;" />
+            <input type="hidden" name="_swat_form_hidden_fields" value="8j4MzYvIHStk6-ieLqG6Gw|a:2:{i:0;s:18:&quot;_swat_form_process&quot;;i:1;s:24:&quot;payment_option_submitted&quot;;}" />
+            <input type="hidden" name="_swat_form_authentication_token" value="KBtGahnUMiWvQotBE2WWYQ|s:22:&quot;RBEVUMI1ikxEZIj2Oz7qTA&quot;;" />
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <% include ./partials/footer %>
+    </footer>
+  </body>
+</html>

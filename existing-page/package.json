@@ -1,0 +1,35 @@
+{
+  "name": "existing-page",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/core": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
+    "debug": "^4.1.1",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "file-loader": "^4.2.0",
+    "jquery": "^3.4.1",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "style-loader": "^1.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.40.2",
+    "webpack-dev-middleware": "^3.7.1"
+  },
+  "scripts": {
+    "start": "DEBUG=* node src/index.js",
+    "build": "NODE_ENV=production webpack",
+    "lint": "eslint .",
+    "prettier": "prettier --config .prettierrc.json --list-different 'src/**/*.js'",
+    "prettier:fix": "prettier --config .prettierrc.json --write 'src/**/*.js'"
+  },
+  "devDependencies": {
+    "eslint": "^6.3.0",
+    "prettier": "^1.18.2",
+    "webpack-cli": "^3.3.8"
+  }
+}
