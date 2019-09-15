@@ -46,8 +46,7 @@ yarn start
 2 - Build Out New Page
 ----------------------
 Using the provided `create-react-app` base in the `/new-page` folder, implement
-the page from this mockup:
-https://www.figma.com/file/pirNL6mXMswfRkJQAZsDSK/devtest
+the page from the Figma file sent to you via email.
 
 If you create a free Figma account, you’ll have access to export assets and
 inspect details in the mockup.
