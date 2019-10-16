@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --ext=js,jsx .",
+    "lint": "eslint .",
     "prettier": "prettier --config .prettierrc.json --list-different 'src/**/*.{js,jsx}'",
     "prettier:fix": "prettier --config .prettierrc.json --write 'src/**/*.{js,jsx}'"
   },
