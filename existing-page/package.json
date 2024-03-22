@@ -18,7 +18,7 @@
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
-    "webpack-dev-middleware": "^3.7.1"
+    "webpack-dev-middleware": "^5.3.4"
   },
   "scripts": {
     "start": "DEBUG=* node src/index.js",
