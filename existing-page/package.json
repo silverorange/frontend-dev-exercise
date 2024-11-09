@@ -9,7 +9,7 @@
     "css-loader": "^3.2.0",
     "debug": "^4.3.1",
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
+    "express": "^4.20.0",
     "file-loader": "^4.2.0",
     "jquery": "^3.5.0",
     "less": "^3.10.3",
