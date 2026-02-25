@@ -2,24 +2,18 @@
 
 This exercise is designed to assess how you approach tasks representative of
 the front-end developer role at silverorange. We are as interested in your
-process as we are in the final results. Please include descriptive Git commit
-messages and comments where you think your code may be unclear.
+process as we are in the final results. **Please include descriptive Git commit
+messages and comments where you think your code may be unclear.**
 
 ## 1 - Update Existing Page
 
-With the provided mini application, make the following changes to the existing
-page. For this exercise we are interested in HTML and CSS only—**no
-functionality is required**. No mockups are provided, so work to make changes
-fit with the existing visual page design:
+With the provided static page, make the following changes to the existing
+page at `index.html`. No mockups are provided, use your judgement and the base styles provided in `style.css`. This implementation should have [widely available baseline support](https://web-platform-dx.github.io/web-features/):
 
-1. Change the multi-line _Street Address_ field into line1 and line2 fields.
-   Line2 field should be optional.
-2. Add a check-mark and the following text below the _Order Summary_ section:
-   > With our “Rise & Shine” beta program, you get early access to new
-   > features, but they may not always work perfectly. You can change your beta
-   > preference at any time after you join.
-3. Add a picture of the product into the order summary. A high resolution image
-   is provided in `product-photos/product.jpg`.
+1. Move the main and aside content into a two-column layout at larger screen sizes. At a minimum, the aside content should be 200px wide and the main content should be 400px wide. The footer should always remain at the bottom of the viewport.
+2. Move "Show more information" section into a modal. Use accent colors to style the trigger for this modal, which should have accessible name "Show more information".
+
+**BONUS**: add light/dark mode (according to system or user agent-level preference)
 
 ### Runing the Development Server
 
@@ -54,7 +48,7 @@ inspect details in the mockup.
 For this exercise we are just interested in replicating the visual appearance
 of the mockup—**no functionality is required**. Use appropriate React
 components, HTML elements and CSS. For your implementation, divide the page
-into logical React components.
+into logical React components. [Widely available baseline support](https://web-platform-dx.github.io/web-features/) is expected.
 
 A basic responsive template is included in the project to get you started.
 
