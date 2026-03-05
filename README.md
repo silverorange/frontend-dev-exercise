@@ -1,20 +1,20 @@
-silverorange Frontend Developer Exercise
-==========================================
+# silverorange Frontend Developer Exercise
+
 This exercise is designed to assess how you approach tasks representative of
 the front-end developer role at silverorange. We are as interested in your
 process as we are in the final results. Please include descriptive Git commit
 messages and comments where you think your code may be unclear.
 
-1 - Update Existing Page
-------------------------
+## 1 - Update Existing Page
+
 With the provided mini application, make the following changes to the existing
 page. For this exercise we are interested in HTML and CSS only—**no
 functionality is required**. No mockups are provided, so work to make changes
 fit with the existing visual page design:
 
-1. Change the multi-line *Street Address* field into line1 and line2 fields.
+1. Change the multi-line _Street Address_ field into line1 and line2 fields.
    Line2 field should be optional.
-2. Add a check-mark and the following text below the *Order Summary* section:
+2. Add a check-mark and the following text below the _Order Summary_ section:
    > With our “Rise & Shine” beta program, you get early access to new
    > features, but they may not always work perfectly. You can change your beta
    > preference at any time after you join.
@@ -31,11 +31,11 @@ yarn start
 
 ### Files to Edit
 
- - The HTML template to edit is in `src/views/checkout.ejs`
- - The CSS to edit is in `src/assets/checkout.less`. You can use LESS features
-   to implement your changes, or just use plain CSS.
- - Images can be added to the folder `src/public/images` and can be referenced
-   in HTML and CSS as `images/${filename}`.
+- The HTML template to edit is in `src/views/checkout.ejs`
+- The CSS to edit is in `src/assets/checkout.less`. You can use LESS features
+  to implement your changes, or just use plain CSS.
+- Images can be added to the folder `src/public/images` and can be referenced
+  in HTML and CSS as `images/${filename}`.
 
 ### Testing and Development
 
@@ -43,9 +43,9 @@ yarn start
 2. Visit http://localhost:4000/checkout
 3. Refresh the page in your browser after saving your changes.
 
-2 - Build Out New Page
-----------------------
-Using the provided `create-react-app` base in the `/new-page` folder, implement
+## 2 - Build Out New Page
+
+Using the provided `vite` base in the `/new-page` folder, implement
 the page from the Figma file sent to you via email.
 
 If you create a free Figma account, you’ll have access to export assets and
@@ -70,6 +70,6 @@ yarn install
 yarn start
 ```
 
-Environment
------------
+## Environment
+
 For this exercise, you can use any stable versions of Node JS and Yarn.
