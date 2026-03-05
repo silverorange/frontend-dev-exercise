@@ -58,18 +58,16 @@ into logical React components.
 
 A basic responsive template is included in the project to get you started.
 
-### Runing and Testing
-
-Create-react-app comes with hot-reloading. Starting the development server
-with `yarn start` will open your default browser, and the page will
-automaticaly refresh as you edit and save components and CSS.
+### Running and Testing
 
 ```sh
 cd new-page/
-yarn install
-yarn start
+pnpm install
+pnpm dev
 ```
+
+The page should hot reload as you make updates.
 
 ## Environment
 
-For this exercise, you can use any stable versions of Node JS and Yarn.
+For this exercise, Vite requires Node.js version 20.19+, 22.12+.
