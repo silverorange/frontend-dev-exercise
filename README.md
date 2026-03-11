@@ -15,28 +15,6 @@ page at `index.html`. No mockups are provided, use your judgement and the base s
 
 **BONUS**: add light/dark mode (according to system or user agent-level preference)
 
-### Runing the Development Server
-
-```sh
-cd existing-page/
-yarn install
-yarn start
-```
-
-### Files to Edit
-
-- The HTML template to edit is in `src/views/checkout.ejs`
-- The CSS to edit is in `src/assets/checkout.less`. You can use LESS features
-  to implement your changes, or just use plain CSS.
-- Images can be added to the folder `src/public/images` and can be referenced
-  in HTML and CSS as `images/${filename}`.
-
-### Testing and Development
-
-1. Open a browser.
-2. Visit http://localhost:4000/checkout
-3. Refresh the page in your browser after saving your changes.
-
 ## 2 - Build Out New Page
 
 Using the provided `vite` base in the `/new-page` folder, implement
